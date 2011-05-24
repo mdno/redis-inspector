@@ -8,6 +8,12 @@ class KeysController extends BaseController {
 	{	
 		parent::__construct($args);
 		
+		if (!class_exists("Redis"))
+		{
+			$this->raiseError("Class Redis not found.");
+			return;
+		}
+		
 		try
 		{
 			$this->Redis = new Redis();
