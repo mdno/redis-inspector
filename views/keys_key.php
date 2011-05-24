@@ -49,3 +49,4 @@ switch ($type)
 
 } ?>
 </output>
+<code class="meta">Time to live: <?php echo ($ttl>0 ? "$ttl seconds. Will expire at ".date('r', time() + $ttl) : "&#8734;")?></code>

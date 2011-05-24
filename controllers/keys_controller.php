@@ -60,6 +60,8 @@ class KeysController extends BaseController {
 		
 		$this->data = array('curkey' => $key, 'type' => $this->getType($key));
 		
+		$this->data['ttl'] = $this->Redis->ttl($key);
+		
 		switch ($this->data['type'])
 		{
 			case 'string':
