@@ -12,10 +12,84 @@ body {
 	line-height: 1.5em;
 }
 
-h1 a {
+header form {
+	margin-top: 18px;
+}
+
+header form p {
+	display: inline-block;
+
+	margin-right: 8px;;
+}
+
+header form label {
+	display: inline-block;
+
+	padding-left: 8px;
+
+	background-color: #333;
+
+	font-size: 14px;
+}
+
+header form label input {
+	padding: 4px 8px 4px 4px;
+
+	border: 0;
+
+	background-color: transparent;
+	color: #f9e8c8;
+
+	text-align: right;
+}
+
+header form label input:focus {
+	outline: none;
+}
+
+header form .separator label input {
+	width: 15px;
+}
+
+header form .prefix label input {
+	width: 60px;
+}
+
+header form .limit label input {
+	width: 35px;
+}
+
+header form .db label input {
+	width: 15px;
+}
+
+header form .host label input {
+	width: 101px;
+}
+
+header form .port label input {
+	width: 35px;
+}
+
+header form input[type="submit"] {
+	padding: 6px 10px;
+
+	border: 0;
+
+	background-color: #f9e8c8;
+	color: #333;
+
+	text-transform: uppercase;
+}
+
+header form input[type="submit"].reset {
+	background-color: #333;
+	color: #f9e8c8;
+}
+
+header h1 a {
 	font-size:2em;
 	text-decoration: none;
-	padding-bottom:10px;
 	display: block;
 }
 
@@ -42,13 +116,13 @@ output {
 			background-color:#222;
 			font-size:0.9em;
 		}
-		
+
 	output {
 		background-color:#CCC;
 		color:#000;
 		padding:20px;
 	}
-		
+
 ol, ul {
 	padding-left:40px;
 }
@@ -56,24 +130,24 @@ ol, ul {
 	ul li {
 		list-style: square;
 	}
-	
+
 	ol li {
 		list-style: decimal;
 	}
-	
+
 		ul li a.full-key ,
 		ul li a.part-key {
 			font-family: "Consolas", "Courier New", monospace;
 		}
-		
+
 			ul li a.full-key {
 				margin-left:10px;
 			}
-		
+
 		ul li span.key-type {
 			color:#ccc;
 		}
-	
+
 div.notice {
 	background-color: #f9e8c8;
 	padding:20px;
